@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameRank Global - 게임 상세 정보</title>
+    <title>GameRank - 게임 상세 정보</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900">
-    <nav class="bg-white shadow-sm">
+<body class="bg-gray-100 text-gray-900">
+    <nav class="bg-white shadow-md">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
-            <div class="flex items-center">
-                <a href="#" class="text-2xl font-bold text-blue-600">GameRank Global</a>
-            </div>
+            <div class="text-2xl font-bold text-blue-600">GameRank</div>
             <div class="hidden md:flex space-x-6">
                 <a href="#" class="text-gray-700 hover:text-blue-600">홈</a>
-                <a href="#" class="text-gray-700 hover:text-blue-600">장르별 랭킹</a>
-                <a href="#" class="text-gray-700 hover:text-blue-600">국가별 랭킹</a>
-                <a href="#" class="text-gray-700 hover:text-blue-600">트렌드</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">랭킹</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">장르</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">플랫폼</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">소개</a>
             </div>
             <div class="md:hidden">
                 <button class="text-gray-700 hover:text-blue-600">
@@ -29,72 +28,77 @@
     </nav>
 
     <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <section class="bg-white rounded-lg shadow-md p-8">
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <img src="https://placehold.co/600x400/e2e8f0/64748b?text=Game+Cover" alt="게임 커버 이미지" class="rounded-lg mb-6">
-                </div>
-                <div>
-                    <h1 class="text-3xl font-bold mb-4 text-gray-900">엘든 링</h1>
-                    <div class="space-y-4">
-                        <div>
-                            <h2 class="font-semibold text-gray-700">장르</h2>
-                            <p class="text-gray-600">액션 RPG</p>
-                        </div>
-                        <div>
-                            <h2 class="font-semibold text-gray-700">개발사</h2>
-                            <p class="text-gray-600">FromSoftware</p>
-                        </div>
-                        <div>
-                            <h2 class="font-semibold text-gray-700">글로벌 랭킹</h2>
-                            <div class="flex items-center">
-                                <span class="text-4xl font-bold text-blue-600 mr-4">2</span>
-                                <span class="text-green-600">▲ 상승</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h2 class="font-semibold text-gray-700">국가별 랭킹</h2>
-                            <div class="grid grid-cols-3 gap-4">
-                                <div>
-                                    <img src="https://placehold.co/40x30/e2e8f0/64748b?text=US" alt="미국 국기" class="rounded mb-2">
-                                    <p class="text-center text-sm">1위</p>
-                                </div>
-                                <div>
-                                    <img src="https://placehold.co/40x30/e2e8f0/64748b?text=KR" alt="한국 국기" class="rounded mb-2">
-                                    <p class="text-center text-sm">3위</p>
-                                </div>
-                                <div>
-                                    <img src="https://placehold.co/40x30/e2e8f0/64748b?text=JP" alt="일본 국기" class="rounded mb-2">
-                                    <p class="text-center text-sm">2위</p>
-                                </div>
-                            </div>
-                        </div>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <img src="https://placehold.co/600x400/e2e8f0/64748b?text=Elden+Ring" alt="엘든 링" class="w-full rounded-lg shadow-md">
+            </div>
+            <div>
+                <h1 class="text-3xl font-bold mb-4">엘든 링</h1>
+                
+                <div class="grid grid-cols-2 gap-4 mb-6">
+                    <div>
+                        <p class="text-gray-600">크리틱 스코어</p>
+                        <div class="bg-green-500 text-white rounded-md px-3 py-1 inline-block">96</div>
+                    </div>
+                    <div>
+                        <p class="text-gray-600">유저 스코어</p>
+                        <div class="bg-blue-500 text-white rounded-md px-3 py-1 inline-block">9.2</div>
                     </div>
                 </div>
+
+                <div class="space-y-4">
+                    <div>
+                        <p class="font-semibold">출시 연도</p>
+                        <p>2022년 2월 25일</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold">플랫폼</p>
+                        <div class="flex space-x-2">
+                            <span class="bg-gray-200 rounded-md px-2 py-1">PlayStation 5</span>
+                            <span class="bg-gray-200 rounded-md px-2 py-1">Xbox Series X</span>
+                            <span class="bg-gray-200 rounded-md px-2 py-1">PC</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-semibold">장르</p>
+                        <p>액션 RPG, 오픈 월드</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold">개발사</p>
+                        <p>FromSoftware</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-12">
+            <h2 class="text-2xl font-bold mb-6">게임 리뷰</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p>엘든 링은 FromSoftware의 놀라운 오픈 월드 액션 RPG로, 소울즈 시리즈의 정수를 담은 게임입니다. 광활하고 신비로운 세계관과 도전적인 전투 시스템으로 게이머들에게 잊지 못할 경험을 선사합니다.</p>
             </div>
         </section>
     </main>
 
-    <footer class="bg-white border-t border-gray-200">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid md:grid-cols-3 gap-8">
+    <footer class="bg-white py-12 mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
             <div>
                 <h3 class="font-bold mb-4">회사</h3>
                 <ul class="space-y-2">
                     <li><a href="#" class="text-gray-600 hover:text-blue-600">소개</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-blue-600">데이터 소스</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-blue-600">문의</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-600">팀</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-600">연락처</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="font-bold mb-4">서비스</h3>
                 <ul class="space-y-2">
                     <li><a href="#" class="text-gray-600 hover:text-blue-600">랭킹 방식</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-blue-600">데이터 정책</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-blue-600">API</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-600">데이터 출처</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-600">개인정보처리방침</a></li>
                 </ul>
             </div>
             <div class="text-gray-600">
-                <p>© 2024 GameRank Global. All rights reserved.</p>
+                © 2024 GameRank. All rights reserved.
             </div>
         </div>
     </footer>
