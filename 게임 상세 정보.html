@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameRank Global - 게임 상세 정보</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <div class="flex items-center">
+                <a href="#" class="text-2xl font-bold text-blue-600">GameRank Global</a>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-700 hover:text-blue-600">홈</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">장르별 랭킹</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">국가별 랭킹</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">트렌드</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-gray-700 hover:text-blue-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <section class="bg-white rounded-lg shadow-md p-8">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <img src="https://placehold.co/600x400/e2e8f0/64748b?text=Game+Cover" alt="게임 커버 이미지" class="rounded-lg mb-6">
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold mb-4 text-gray-900">엘든 링</h1>
+                    <div class="space-y-4">
+                        <div>
+                            <h2 class="font-semibold text-gray-700">장르</h2>
+                            <p class="text-gray-600">액션 RPG</p>
+                        </div>
+                        <div>
+                            <h2 class="font-semibold text-gray-700">개발사</h2>
+                            <p class="text-gray-600">FromSoftware</p>
+                        </div>
+                        <div>
+                            <h2 class="font-semibold text-gray-700">글로벌 랭킹</h2>
+                            <div class="flex items-center">
+                                <span class="text-4xl font-bold text-blue-600 mr-4">2</span>
+                                <span class="text-green-600">▲ 상승</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="font-semibold text-gray-700">국가별 랭킹</h2>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div>
+                                    <img src="https://placehold.co/40x30/e2e8f0/64748b?text=US" alt="미국 국기" class="rounded mb-2">
+                                    <p class="text-center text-sm">1위</p>
+                                </div>
+                                <div>
+                                    <img src="https://placehold.co/40x30/e2e8f0/64748b?text=KR" alt="한국 국기" class="rounded mb-2">
+                                    <p class="text-center text-sm">3위</p>
+                                </div>
+                                <div>
+                                    <img src="https://placehold.co/40x30/e2e8f0/64748b?text=JP" alt="일본 국기" class="rounded mb-2">
+                                    <p class="text-center text-sm">2위</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="font-bold mb-4">회사</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-blue-600">소개</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-600">데이터 소스</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-600">문의</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">서비스</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-blue-600">랭킹 방식</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-600">데이터 정책</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-600">API</a></li>
+                </ul>
+            </div>
+            <div class="text-gray-600">
+                <p>© 2024 GameRank Global. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
