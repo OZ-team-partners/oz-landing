@@ -4,7 +4,52 @@
     box-sizing: border-box;
 }
 
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 1rem 2rem;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-links a,
+.external-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.external-link a:hover {
+    color: #ff4757;
+}
+
 body {
+    /* 헤더 부분 */
+    scroll-behavior: smooth; /* 부드러운 스크롤 이동 */
+    padding-top: 80px; /* 고정 헤더로 인한 내용 가림 방지 */
+    /* 이까지 */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         sans-serif;
     background: #f8f9fa;
@@ -66,6 +111,17 @@ body {
     margin-bottom: 1rem;
     color: #6c757d;
     max-width: 600px;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    color: #6c757d;
+    max-width: 600px;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #6c757d;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -112,6 +168,25 @@ body {
 }
 
 .platform-logos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    opacity: 0.6;
+}
+
+.logo-placeholder {
+    width: 120px;
+    height: 40px;
+    background: #dee2e6;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #6c757d;
+
     display: flex;
     gap: 1rem;
     opacity: 1;
@@ -217,6 +292,32 @@ body {
     color: #6c757d;
     font-size: 1rem;
     margin-bottom: 1rem;
+}
+/* before 사진 3장 크기조절 */
+.before-after1-1 {
+    width: 150px;
+    max-width: auto;
+    height: 180px;
+    transform: rotate(-8deg);
+}
+.before-after1-2 {
+    width: 150px;
+    max-width: auto;
+    height: 180px;
+    transform: rotate(0deg);
+}
+.before-after1-3 {
+    width: 150px;
+    max-width: auto;
+    height: 180px;
+    transform: rotate(8deg);
+}
+/* before 사진 3장-끝*/
+
+.before-after2-1 {
+    width: 350px;
+    max-width: auto;
+    height: 280px;
 }
 
 .before-label,
@@ -499,6 +600,37 @@ body {
         width: 100px;
         height: 35px;
         font-size: 0.7rem;
+    }
+
+    .problem-content {
+        text-align: center;
+    }
+
+    .before-after {
+        margin-top: 3rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .before-after {
+        flex-direction: column;
+    }
+
+    .signup-form {
+        flex-direction: column;
+    }
+
+    .features-header h2,
+    .problem-text h2,
+    .future-content h2 {
+        font-size: 2rem;
+    }
+
+    .email-signup {
+        padding: 2rem 1.5rem;
     }
 
     .platform-container {
