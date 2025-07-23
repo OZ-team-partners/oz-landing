@@ -415,6 +415,45 @@ body {
     transform: translateY(-1px);
 }
 
+/* 가상 요소로 오버레이 */
+/* 기존 mask 코드 지우고 */
+
+.platform-container {
+    position: relative;
+    overflow: hidden; /* 이거 중요! */
+}
+
+.platform-container::before,
+.platform-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px; /* 150px에서 100px로 줄여봐 */
+    z-index: 10;
+    pointer-events: none;
+}
+
+.platform-container::before {
+    left: 0;
+    background: linear-gradient(
+        90deg,
+        #f8f9fa 0%,
+        rgba(248, 249, 250, 0.8) 30%,
+        rgba(248, 249, 250, 0) 100%
+    );
+}
+
+.platform-container::after {
+    right: 0;
+    background: linear-gradient(
+        -90deg,
+        #f8f9fa 0%,
+        rgba(248, 249, 250, 0.8) 30%,
+        rgba(248, 249, 250, 0) 100%
+    );
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero-section {
