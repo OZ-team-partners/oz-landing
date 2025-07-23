@@ -160,16 +160,44 @@ body {
 
 .mockup-placeholder {
     width: 100%;
-    height: 300px;
+    height: 400px;
     background: #f8f9fa;
     border-radius: 12px;
     border: 1px solid #dee2e6;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #6c757d;
     font-size: 1rem;
     margin-bottom: 1rem;
+}
+/* before 사진 3장 크기조절 */
+.before-after1-1 {
+  width: 150px; 
+  max-width: auto;
+  height: 180px;
+    transform: rotate(-8deg);
+}
+.before-after1-2 {
+  width: 150px; 
+  max-width: auto;
+  height: 180px;
+   transform: rotate(0deg);
+}
+.before-after1-3 {
+  width: 150px; 
+  max-width: auto;
+  height: 180px;
+   transform: rotate(8deg);
+}
+/* before 사진 3장-끝*/
+
+.before-after2-1 {
+  width: 350px; 
+  max-width: auto;
+  height: 280px;
+  ;
 }
 
 .before-label,
