@@ -429,8 +429,8 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 100px; /* 150px에서 100px로 줄여봐 */
-    z-index: 10;
+    width: 200px; /* 100px에서 200px로 증가 */
+    z-index: 2;
     pointer-events: none;
 }
 
@@ -438,19 +438,22 @@ body {
     left: 0;
     background: linear-gradient(
         90deg,
-        #f8f9fa 0%,
-        rgba(248, 249, 250, 0.8) 30%,
-        rgba(248, 249, 250, 0) 100%
+        #e9ecef 0%,
+        #e9ecef 20%,
+        rgba(233, 236, 239, 0.7) 50%,
+        rgba(233, 236, 239, 0.3) 80%,
+        rgba(233, 236, 239, 0) 100%
     );
 }
-
 .platform-container::after {
     right: 0;
     background: linear-gradient(
         -90deg,
-        #f8f9fa 0%,
-        rgba(248, 249, 250, 0.8) 30%,
-        rgba(248, 249, 250, 0) 100%
+        #e9ecef 0%,
+        #e9ecef 20%,
+        rgba(233, 236, 239, 0.7) 50%,
+        rgba(233, 236, 239, 0.3) 80%,
+        rgba(233, 236, 239, 0) 100%
     );
 }
 
