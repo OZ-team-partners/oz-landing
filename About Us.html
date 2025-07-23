@@ -1,85 +1,145 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameRank - About Us</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 text-gray-900 font-sans">
-    <header class="bg-white shadow-md">
-        <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-blue-600">GameRank</div>
-            <ul class="hidden md:flex space-x-6">
-                <li><a href="#" class="hover:text-blue-600">홈</a></li>
-                <li><a href="#" class="hover:text-blue-600">랭킹</a></li>
-                <li><a href="#" class="hover:text-blue-600">장르</a></li>
-                <li><a href="#" class="hover:text-blue-600">플랫폼</a></li>
-                <li><a href="#" class="text-blue-600 font-semibold">소개</a></li>
-            </ul>
-            <button class="md:hidden text-gray-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GameRank - About Us</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-50 text-gray-900 font-sans">
+        <header class="bg-white shadow-md">
+            <nav
+                class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+            >
+                <div class="text-2xl font-bold text-blue-600">GameRank</div>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#" class="hover:text-blue-600">홈</a></li>
+                    <li><a href="#" class="hover:text-blue-600">랭킹</a></li>
+                    <li><a href="#" class="hover:text-blue-600">장르</a></li>
+                    <li><a href="#" class="hover:text-blue-600">플랫폼</a></li>
+                    <li>
+                        <a href="#" class="text-blue-600 font-semibold">소개</a>
+                    </li>
+                </ul>
+                <button class="md:hidden text-gray-600">
+                    <svg
+                        class="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"
+                        ></path>
+                    </svg>
+                </button>
+            </nav>
+        </header>
 
-    <main class="max-w-6xl mx-auto px-4 py-12">
-        <section class="bg-white rounded-lg shadow-md p-8">
-            <h1 class="text-3xl font-bold mb-6 text-blue-600">GameRank 소개</h1>
-            
-            <div class="grid md:grid-cols-2 gap-8">
+        <main class="max-w-6xl mx-auto px-4 py-12">
+            <section class="bg-white rounded-lg shadow-md p-8">
+                <h1 class="text-3xl font-bold mb-6 text-blue-600">
+                    GameRank 소개
+                </h1>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h2 class="text-xl font-semibold mb-4">우리의 미션</h2>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            GameRank는 전 세계 게임 랭킹을 투명하고 공정하게
+                            제공하는 것을 목표로 합니다. 게이머들에게 가장
+                            신뢰할 수 있는 게임 정보 플랫폼이 되고자 합니다.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-semibold mb-4">우리의 팀</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            게임과 데이터 분석에 열정적인 전문가들로 구성된
+                            팀입니다. 다양한 배경과 전문성을 가진 멤버들이
+                            협력하여 최고의 서비스를 제공합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <h2 class="text-xl font-semibold mb-4">연락처</h2>
+                    <div class="bg-gray-50 p-4 rounded-md">
+                        <p class="text-gray-700">
+                            이메일: contact@gamerank.com
+                        </p>
+                        <p class="text-gray-700">전화: +82 02-1234-5678</p>
+                        <p class="text-gray-700">
+                            주소: 서울특별시 강남구 테헤란로
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-white shadow-md mt-12">
+            <div class="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-3 gap-8">
                 <div>
-                    <h2 class="text-xl font-semibold mb-4">우리의 미션</h2>
-                    <p class="text-gray-700 leading-relaxed mb-4">
-                        GameRank는 전 세계 게임 랭킹을 투명하고 공정하게 제공하는 것을 목표로 합니다. 
-                        게이머들에게 가장 신뢰할 수 있는 게임 정보 플랫폼이 되고자 합니다.
+                    <h3 class="font-semibold mb-4">회사</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a
+                                href="#"
+                                class="text-gray-600 hover:text-blue-600"
+                                >소개</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-gray-600 hover:text-blue-600"
+                                >팀</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-gray-600 hover:text-blue-600"
+                                >연락처</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">서비스</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a
+                                href="#"
+                                class="text-gray-600 hover:text-blue-600"
+                                >랭킹 방식</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-gray-600 hover:text-blue-600"
+                                >데이터 출처</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-gray-600 hover:text-blue-600"
+                                >개인정보처리방침</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-gray-500">
+                        © 2024 GameRank. All rights reserved.
                     </p>
                 </div>
-                
-                <div>
-                    <h2 class="text-xl font-semibold mb-4">우리의 팀</h2>
-                    <p class="text-gray-700 leading-relaxed">
-                        게임과 데이터 분석에 열정적인 전문가들로 구성된 팀입니다. 
-                        다양한 배경과 전문성을 가진 멤버들이 협력하여 최고의 서비스를 제공합니다.
-                    </p>
-                </div>
             </div>
-
-            <div class="mt-8">
-                <h2 class="text-xl font-semibold mb-4">연락처</h2>
-                <div class="bg-gray-50 p-4 rounded-md">
-                    <p class="text-gray-700">이메일: contact@gamerank.com</p>
-                    <p class="text-gray-700">전화: +82 02-1234-5678</p>
-                    <p class="text-gray-700">주소: 서울특별시 강남구 테헤란로</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-white shadow-md mt-12">
-        <div class="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-3 gap-8">
-            <div>
-                <h3 class="font-semibold mb-4">회사</h3>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-600 hover:text-blue-600">소개</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-blue-600">팀</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-blue-600">연락처</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="font-semibold mb-4">서비스</h3>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-600 hover:text-blue-600">랭킹 방식</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-blue-600">데이터 출처</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-blue-600">개인정보처리방침</a></li>
-                </ul>
-            </div>
-            <div>
-                <p class="text-gray-500">© 2024 GameRank. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
