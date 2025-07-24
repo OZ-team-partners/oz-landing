@@ -452,7 +452,7 @@ body {
 }
 /* 플랫폼 통합 배경사진 */
 #feature-card-middle {
-    background-image: url("/landing/before-after/");
+    background-image: url("/landing/before-after/feature-card-img2.png");
 }
 /* 히든게임 발견 */
 #feature-card-bottom {
