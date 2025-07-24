@@ -359,7 +359,7 @@ position: relative;
 }
 /* 플랫폼 통합 배경사진 */
 #feature-card-middle {
-  background-image: url('/landing/before-after/');
+  background-image: url('/landing/before-after/feature-card-img2.png');
 }
 /* 히든게임 발견 */
 #feature-card-bottom {
@@ -388,7 +388,7 @@ position: relative;
 .feature-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #1f6feb 0%, #0969da 100%);
+    background: linear-gradient(135deg, #eb1fd0 0%, #0969da 100%);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -401,13 +401,13 @@ position: relative;
 .feature-card h3 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
-    color: #212529;
+    color: #ffffff;
     position: relative;
     z-index: 1;
 }
 
 .feature-card p {
-    color: #6c757d;
+    color: #ffffff;
     font-size: 1rem;
     position: relative;
     z-index: 1;
@@ -443,15 +443,16 @@ position: relative;
     width: 100%;
     max-width: 800px;
     height: 400px;
-    background: #f8f9fa;
+    background: #f8f9fa url('/landing/before-after/roadmap-placeholder1.png') no-repeat bottom center;
+    background-size: cover; 
     border-radius: 16px;
     border: 1px solid #dee2e6;
     margin: 3rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #6c757d;
-    font-size: 1.1rem;
+    color: #f4f4f4;
+    font-size: 1.25rem;
 }
 
 /* Section 5: Early Access */
