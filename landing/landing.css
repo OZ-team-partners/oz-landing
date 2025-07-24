@@ -216,6 +216,99 @@ body {
     background: #c1c7d0;
 }
 
+/* Unique Selling Points */
+.unique-selling-points {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.usp-tag {
+    background: rgba(31, 111, 235, 0.1);
+    color: #1f6feb;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgba(31, 111, 235, 0.2);
+    transition: all 0.3s ease;
+}
+
+.usp-tag:hover {
+    background: rgba(31, 111, 235, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Enhanced CTA Section */
+.cta-section {
+    margin-bottom: 2rem;
+}
+
+.cta-subtitle {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Hero Stats - NEW! */
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f6feb;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Enhanced CTA Button */
+.cta-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: left 0.5s;
+}
+
+.cta-button:hover::before {
+    left: 100%;
+}
+
 /* Section 2: Problem/Solution */
 .problem-section {
     padding: 8rem 0;
@@ -256,16 +349,16 @@ body {
     font-size: 20px;
 }
 
-.mockup-placeholder { 
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-  background: #f8f9fa;
-  border-radius: 12px;
-  border: 1px solid #dee2e6;
+.mockup-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
 }
 /* before 사진 3장 크기조절 */
 .before-after1-1 {
@@ -338,42 +431,41 @@ body {
 }
 
 .feature-card {
-position: relative;
-  width: 1160px;
-  height: 239px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  overflow: hidden;
-  padding: 20px;
+    position: relative;
+    width: 1160px;
+    height: 239px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
 }
 /* 실시간 순위 배경사진 */
 #feature-card-top {
-  background-image: url('/landing/before-after/feature-card-img1.png');
+    background-image: url("/landing/before-after/feature-card-img1.png");
 }
 /* 플랫폼 통합 배경사진 */
 #feature-card-middle {
-  background-image: url('/landing/before-after/');
+    background-image: url("/landing/before-after/");
 }
 /* 히든게임 발견 */
 #feature-card-bottom {
-  background-image: url('/landing/before-after/feature-card-img3.jpg');
+    background-image: url("/landing/before-after/feature-card-img3.jpg");
 }
 
 .feature-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* 40% 투명한 검정 배경 */
-  z-index: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* 40% 투명한 검정 배경 */
+    z-index: 0;
 }
-
 
 .feature-card:hover {
     transform: translateY(-8px);
